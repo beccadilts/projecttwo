@@ -1,25 +1,31 @@
 // Interactivity demo 2
 
+//Zoom the Moon
 
 console.log('hello')
 //variable
 var body  = document.querySelector('body')
 var button =document.querySelector('.trigger')
+var audio = document.querySelector('audio');
 
 
 //event/event listener
 
-button.addEventListener('click',spin)
+button.addEventListener('click',zoom)
 
 //declare function
-function spin() {
+function zoom() {
 	
 	//condition statement v
-if (body.id == 'spin') {
+if (body.id == 'zoom') {
 	body.id = ''
-} else {
-	body.id = 'spin'
+
+} 
+else {
+	body.id = 'zoom'
+	audio.play()
 }
 
 
 }
+

@@ -33,21 +33,13 @@ main {
 	border-radius: 50%;
 	border: 2px solid #64B2FF;
 	transform:scale(0.01);
-    transition:transform 6s;
+    
 
 	
 }
-/*.lilypad {
-	width: 20em;
-	height: 20em;
-	border-radius: 50%;
-    background-image: url(img/lilypad.png);
-    background-size: 125%;
-    background-position: center;
-    transform:scale(0.25);
-    transition:transform 6s;
+
 }*/
-#spin .lilypad{
+#zoom {
 
 	transform: scale(1);
 
@@ -66,17 +58,20 @@ main {
     background-size: 125%;
     background-position: center;
   
-    transition:transform 6s;
     box-shadow: 0 06px rgba(0,0,0,0);
 }
 .trigger:hover {
 	box-shadow: 0px 0px 8px rgba(176,219,255,0.75);
 }
 
-#spin .trigger {
-	transform: rotate(135deg);
+#zoom .trigger {
+	transform: rotate(360deg);
+
+    transition:transform 6s;
 }
 
-#spin .ripple {
-transform: scale(5.5);
+#zoom .ripple {
+transform: scale(7);
+transition:transform 6s;
 }
+
