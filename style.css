@@ -21,25 +21,26 @@ main {
 	
     
 }
+.ripple{
 
-.ripple {
-
-	position:fixed;
+	position:relative;
 	z-index:-1;
-	left:3.5em;
-	bottom:3em;
+	left:1em;
+	bottom:20em;
 	width:400px;
 	height:400px;
 	border-radius: 50%;
 	border: 2px solid #64B2FF;
 	transform:scale(0.01);
-    
+    transition:transform 6s;
+
 
 	
 }
 
-}*/
-#zoom {
+
+
+#spin {
 
 	transform: scale(1);
 
@@ -51,27 +52,27 @@ main {
 	left: 2em;
 	cursor: pointer;
 	padding: 0;
-	width: 20em;
-	height: 20em;
+	width: 16em;
+	height: 16em;
 	border-radius: 50%;
-    background-image: url(img/lilypad.png);
-    background-size: 125%;
-    background-position: center;
-  
-    box-shadow: 0 06px rgba(0,0,0,0);
+box-shadow: 0 06px rgba(0,0,0,0);
+    transition: all ease 3s;
 }
 .trigger:hover {
 	box-shadow: 0px 0px 8px rgba(176,219,255,0.75);
 }
 
-#zoom .trigger {
-	transform: rotate(360deg);
+#spin .trigger {
+	transform: rotate(135deg);
 
-    transition:transform 6s;
 }
 
-#zoom .ripple {
-transform: scale(7);
-transition:transform 6s;
+#spin .ripple {
+transform: scale(5.5);
 }
+
+
+	
+
+}*/
 
